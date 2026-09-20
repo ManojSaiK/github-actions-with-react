@@ -5,7 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Greeting
-        run: echo "Hello! Welcome to GHA.."
+        run: |
+          echo "Hello! Welcome to GHA.."
+          echo "This is ${{github.actor}}"
       - name: Send Off
-        run: echo "Bye!!!"
+        run: |
+          echo "Tata"
+          echo "Bye bye!!!"
   
