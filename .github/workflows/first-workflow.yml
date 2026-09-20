@@ -9,10 +9,13 @@ jobs:
           echo "Hello! Welcome to GHA.."
           echo "This is ${{github.actor}}"
       - name: Clone the code
+        run: git clone https://github.com/ManojSaiK/github-actions-with-react.git
+
+      - name: Build the code
         run: |
-          git clone https://github.com/ManojSaiK/github-actions-with-react.git
           cd github-actions-with-react
           npm ci
+          
       - name: Send Off
         run: |
           echo "Tata"
