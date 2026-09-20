@@ -10,7 +10,8 @@ jobs:
           echo "This is ${{github.actor}}"
       - name: Clone the code
         run: |
-          git clone https://github.com/ManojSaiK/django-notes-app.git
+          git clone https://github.com/ManojSaiK/github-actions-with-react.git
+          cd github-actions-with-react
           npm ci
       - name: Send Off
         run: |
